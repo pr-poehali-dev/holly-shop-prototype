@@ -19,43 +19,69 @@ const Index = () => {
   const products = [
     {
       id: 1,
-      name: "Увлажняющий крем Glow",
-      price: 2990,
-      originalPrice: 3990,
-      image: "/img/53286725-4e64-48b5-a34f-4784e46c8c9e.jpg",
-      category: "Уход за лицом",
-      rating: 4.8,
-      reviews: 124,
+      name: "Snail Repair Intensive Ampoule",
+      price: 2490,
+      originalPrice: 3190,
+      image: "/img/488b0d2f-de30-4521-882a-4b58f55fd33d.jpg",
+      category: "K-Beauty Сыворотки",
+      rating: 4.9,
+      reviews: 324,
+      brand: "COSRX",
     },
     {
       id: 2,
-      name: "Помада Luxury Matte",
-      price: 1590,
-      originalPrice: 2190,
-      image: "/img/e0bfc832-415c-4626-8872-582751dcd0bb.jpg",
-      category: "Макияж",
-      rating: 4.9,
-      reviews: 89,
+      name: "Glass Skin Cushion Foundation",
+      price: 1890,
+      originalPrice: 2490,
+      image: "/img/0bd25582-aaed-4dee-9da7-af9211dbc3ab.jpg",
+      category: "K-Beauty Макияж",
+      rating: 4.8,
+      reviews: 189,
+      brand: "Laneige",
     },
     {
       id: 3,
-      name: "Сыворотка с витамином C",
-      price: 4990,
-      originalPrice: 5990,
-      image: "/img/53286725-4e64-48b5-a34f-4784e46c8c9e.jpg",
-      category: "Уход за лицом",
+      name: "Ginseng Essence Water",
+      price: 3990,
+      originalPrice: 4990,
+      image: "/img/488b0d2f-de30-4521-882a-4b58f55fd33d.jpg",
+      category: "K-Beauty Уход",
       rating: 4.7,
-      reviews: 256,
+      reviews: 456,
+      brand: "Beauty of Joseon",
     },
     {
       id: 4,
-      name: "Палетка теней Sunset",
-      price: 3490,
-      originalPrice: 4490,
-      image: "/img/e0bfc832-415c-4626-8872-582751dcd0bb.jpg",
-      category: "Макияж",
+      name: "Hydrogel Eye Patches",
+      price: 1490,
+      originalPrice: 1990,
+      image: "/img/83e07966-6258-43f0-8281-7cb4682156a2.jpg",
+      category: "K-Beauty Маски",
       rating: 4.6,
-      reviews: 78,
+      reviews: 278,
+      brand: "Petitfée",
+    },
+    {
+      id: 5,
+      name: "Lip Tint Velvet",
+      price: 890,
+      originalPrice: 1290,
+      image: "/img/0bd25582-aaed-4dee-9da7-af9211dbc3ab.jpg",
+      category: "K-Beauty Макияж",
+      rating: 4.9,
+      reviews: 156,
+      brand: "Etude House",
+    },
+    {
+      id: 6,
+      name: "Centella Calming Gel",
+      price: 2190,
+      originalPrice: 2890,
+      image: "/img/488b0d2f-de30-4521-882a-4b58f55fd33d.jpg",
+      category: "K-Beauty Уход",
+      rating: 4.8,
+      reviews: 389,
+      brand: "Purito",
     },
   ];
 
@@ -71,7 +97,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-8">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-holly-coral to-holly-purple bg-clip-text text-transparent">
-                Holly Shop
+                Kcos
               </h1>
               <nav className="hidden md:flex space-x-6">
                 <a
@@ -104,7 +130,7 @@ const Index = () => {
             <div className="flex items-center space-x-4">
               <div className="relative hidden md:block">
                 <Input
-                  placeholder="Поиск товаров..."
+                  placeholder="Поиск K-Beauty..."
                   className="w-64 pl-10 border-holly-coral/30 focus:border-holly-coral"
                 />
                 <Icon
@@ -143,7 +169,7 @@ const Index = () => {
             <div className="md:hidden mt-4 pb-4 border-t border-holly-coral/20">
               <div className="relative mb-4">
                 <Input
-                  placeholder="Поиск товаров..."
+                  placeholder="Поиск K-Beauty..."
                   className="w-full pl-10 border-holly-coral/30 focus:border-holly-coral"
                 />
                 <Icon
@@ -189,22 +215,22 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h2 className="text-5xl font-bold text-gray-900 mb-6">
-                Красота в каждой
+                K-Beauty
                 <span className="bg-gradient-to-r from-holly-coral to-holly-purple bg-clip-text text-transparent">
-                  {" "}
-                  детали
+                  революция
                 </span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Откройте для себя мир премиальной косметики и ухода. Только
-                лучшие бренды для вашей естественной красоты.
+                Откройте секреты корейской красоты! Инновационные формулы,
+                натуральные ингредиенты и многоступенчатый уход для идеальной
+                кожи.
               </p>
               <div className="flex space-x-4">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-holly-coral to-holly-purple hover:from-holly-coral/80 hover:to-holly-purple/80 text-white px-8"
                 >
-                  Каталог товаров
+                  K-Beauty каталог
                 </Button>
                 <Button
                   variant="outline"
@@ -218,8 +244,8 @@ const Index = () => {
             <div className="relative animate-scale-in">
               <div className="absolute inset-0 bg-gradient-to-r from-holly-mint/20 to-holly-blue/20 rounded-full blur-3xl"></div>
               <img
-                src="/img/20c9d785-2570-44a4-8e9b-0714e0e93095.jpg"
-                alt="Красивая девушка с косметикой"
+                src="/img/83e07966-6258-43f0-8281-7cb4682156a2.jpg"
+                alt="Корейская косметика и уход"
                 className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
@@ -231,14 +257,22 @@ const Index = () => {
       <section className="py-16 bg-white/50">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">
-            Популярные категории
+            K-Beauty категории
           </h3>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { name: "Уход за лицом", icon: "Sparkles", color: "holly-coral" },
-              { name: "Макияж", icon: "Palette", color: "holly-purple" },
-              { name: "Уход за телом", icon: "Heart", color: "holly-mint" },
-              { name: "Парфюмерия", icon: "Flower", color: "holly-blue" },
+              {
+                name: "K-Beauty Сыворотки",
+                icon: "Sparkles",
+                color: "holly-coral",
+              },
+              {
+                name: "K-Beauty Макияж",
+                icon: "Palette",
+                color: "holly-purple",
+              },
+              { name: "K-Beauty Маски", icon: "Heart", color: "holly-mint" },
+              { name: "K-Beauty Уход", icon: "Flower", color: "holly-blue" },
             ].map((category, index) => (
               <Card
                 key={index}
@@ -268,14 +302,14 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Хиты продаж
+              Топ K-Beauty товаров
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Самые популярные товары, которые выбирают наши клиенты
+              Лучшие корейские бренды и инновационные формулы
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product, index) => (
               <Card
                 key={product.id}
@@ -321,6 +355,9 @@ const Index = () => {
                     </div>
                   </div>
                   <CardTitle className="text-lg">{product.name}</CardTitle>
+                  <p className="text-sm text-holly-purple font-medium">
+                    {product.brand}
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between mb-4">
@@ -359,7 +396,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                Быстрая доставка по всей России
+                Доставка K-Beauty по всей России
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
@@ -370,7 +407,7 @@ const Index = () => {
                     <h4 className="font-semibold text-gray-900">
                       Бесплатная доставка
                     </h4>
-                    <p className="text-gray-600">При заказе от 3000 рублей</p>
+                    <p className="text-gray-600">При заказе от 2500 рублей</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -403,8 +440,8 @@ const Index = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-holly-coral/20 to-holly-mint/20 rounded-full blur-3xl"></div>
               <img
-                src="/img/53286725-4e64-48b5-a34f-4784e46c8c9e.jpg"
-                alt="Доставка косметики"
+                src="/img/488b0d2f-de30-4521-882a-4b58f55fd33d.jpg"
+                alt="Доставка K-Beauty"
                 className="relative rounded-2xl shadow-xl w-full h-[400px] object-cover"
               />
             </div>
@@ -417,10 +454,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Подпишитесь на новости
+              Подпишитесь на K-Beauty новости
             </h3>
             <p className="text-gray-600 mb-8">
-              Будьте первыми, кто узнает о новинках и специальных предложениях
+              Будьте первыми, кто узнает о новых корейских брендах и специальных
+              предложениях
             </p>
             <div className="flex space-x-4 max-w-md mx-auto">
               <Input
@@ -441,10 +479,10 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h4 className="text-2xl font-bold mb-4 bg-gradient-to-r from-holly-coral to-holly-purple bg-clip-text text-transparent">
-                Holly Shop
+                Kcos
               </h4>
               <p className="text-gray-400 mb-4">
-                Премиальная косметика и уход для вашей естественной красоты
+                Корейская косметика и инновационные решения для идеальной кожи
               </p>
               <div className="flex space-x-4">
                 <Button
@@ -472,11 +510,11 @@ const Index = () => {
             </div>
 
             <div>
-              <h5 className="font-semibold mb-4 text-holly-mint">Каталог</h5>
+              <h5 className="font-semibold mb-4 text-holly-mint">K-Beauty</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Уход за лицом
+                    Сыворотки
                   </a>
                 </li>
                 <li>
@@ -486,12 +524,12 @@ const Index = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Уход за телом
+                    Маски
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
-                    Парфюмерия
+                    Уход
                   </a>
                 </li>
               </ul>
@@ -528,15 +566,15 @@ const Index = () => {
               <div className="space-y-2 text-gray-400">
                 <p className="flex items-center">
                   <Icon name="Phone" className="h-4 w-4 mr-2" />
-                  +7 (495) 123-45-67
+                  +7 (495) 456-78-90
                 </p>
                 <p className="flex items-center">
                   <Icon name="Mail" className="h-4 w-4 mr-2" />
-                  hello@hollyshop.ru
+                  hello@kcos.ru
                 </p>
                 <p className="flex items-center">
                   <Icon name="MapPin" className="h-4 w-4 mr-2" />
-                  Москва, ул. Красоты, 15
+                  Москва, ул. K-Beauty, 21
                 </p>
               </div>
             </div>
@@ -545,7 +583,7 @@ const Index = () => {
           <Separator className="my-8 bg-gray-800" />
 
           <div className="text-center text-gray-400">
-            <p>&copy; 2024 Holly Shop. Все права защищены.</p>
+            <p>&copy; 2024 Kcos - Korean cosmetics. Все права защищены.</p>
           </div>
         </div>
       </footer>
